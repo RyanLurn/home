@@ -1,0 +1,26 @@
+{
+  "name": "@home/eslint",
+  "type": "module",
+  "private": true,
+  "scripts": {
+    "check-types": "bunx tsc --noEmit",
+    "lint": "bunx eslint --cache",
+    "lint:fix": "bunx eslint --cache --fix",
+    "check": "bun run check-types && bun run lint"
+  },
+  "devDependencies": {
+    "@eslint/js": "^10.0.1",
+    "@home/typescript": "workspace:*",
+    "@tanstack/eslint-plugin-router": "^1.161.4",
+    "@types/eslint-plugin-jsx-a11y": "^6.10.1",
+    "eslint": "catalog:",
+    "eslint-config-prettier": "^10.1.8",
+    "eslint-plugin-jsx-a11y": "^6.10.2",
+    "eslint-plugin-perfectionist": "^5.6.0",
+    "eslint-plugin-react-hooks": "^7.0.1",
+    "globals": "^17.4.0",
+    "tsdown": "catalog:build",
+    "typescript": "catalog:",
+    "typescript-eslint": "^8.57.0"
+  }
+}
