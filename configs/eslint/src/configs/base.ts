@@ -20,6 +20,11 @@ export const baseConfig = defineConfig([
               name: "Redirect",
               from: "package",
             },
+            {
+              package: "@tanstack/router-core",
+              name: "NotFoundError",
+              from: "package",
+            },
           ],
         },
       ],
