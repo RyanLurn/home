@@ -3,19 +3,18 @@ import prettier from "eslint-config-prettier/flat";
 import { defineConfig } from "eslint/config";
 import jsxA11y from "eslint-plugin-jsx-a11y";
 import globals from "globals";
-import { baseConfig } from "@/configs/base";
+import { baseConfig } from "./base.js";
 import tanstackRouter from "@tanstack/eslint-plugin-router";
 
-export const isomorphicConfig = defineConfig([
+export const browserConfig = defineConfig([
   baseConfig,
   {
     languageOptions: {
-      globals: {
-        ...globals.bunBuiltin,
-        ...globals.browser,
-      },
       parserOptions: {
         projectService: true,
+      },
+      globals: {
+        ...globals.browser,
       },
     },
   },

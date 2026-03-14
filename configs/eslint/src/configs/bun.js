@@ -1,4 +1,4 @@
-import { baseConfig } from "@/configs/base";
+import { baseConfig } from "./base.js";
 import prettier from "eslint-config-prettier/flat";
 import { defineConfig } from "eslint/config";
 import globals from "globals";
