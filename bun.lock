@@ -13,6 +13,7 @@
     "apps/server": {
       "name": "@home/server",
       "dependencies": {
+        "@home/core": "workspace:*",
         "@t3-oss/env-core": "catalog:",
         "hono": "^4.12.7",
         "zod": "catalog:",
