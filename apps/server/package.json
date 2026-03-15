@@ -12,6 +12,7 @@
   "dependencies": {
     "@t3-oss/env-core": "catalog:",
     "@home/core": "workspace:*",
+    "ai": "catalog:ai",
     "hono": "^4.12.7",
     "zod": "catalog:"
   },
