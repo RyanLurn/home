@@ -49,7 +49,8 @@
     "format": "bunx prettier . --write",
     "format:check": "bunx prettier . --check",
     "check": "bun run check-types && bun run lint && bun run format:check",
-    "core:build": "bun --filter @home/core build --log-level error"
+    "core:build": "bun --filter @home/core build --log-level error",
+    "ui:build": "bun --filter @home/ui build --log-level error"
   },
   "devDependencies": {
     "prettier": "3.8.1",
