@@ -1,0 +1,24 @@
+{
+  "name": "@home/server",
+  "type": "module",
+  "private": true,
+  "scripts": {
+    "dev": "bun run --hot src/index.ts",
+    "check-types": "bunx tsc --noEmit",
+    "lint": "bunx eslint --cache",
+    "lint:fix": "bunx eslint --cache --fix",
+    "check": "bun run check-types && bun run lint"
+  },
+  "dependencies": {
+    "@t3-oss/env-core": "catalog:",
+    "hono": "^4.12.7",
+    "zod": "catalog:"
+  },
+  "devDependencies": {
+    "@home/eslint": "workspace:*",
+    "@home/typescript": "workspace:*",
+    "@types/bun": "catalog:types",
+    "eslint": "catalog:",
+    "typescript": "catalog:"
+  }
+}
