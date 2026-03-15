@@ -20,6 +20,7 @@
         "ai": "^6.0.116"
       },
       "types": {
+        "@types/babel__core": "^7.20.5",
         "@types/bun": "^1.3.10",
         "@types/react": "^19.2.14",
         "@types/react-dom": "^19.2.3"
@@ -31,6 +32,8 @@
         "tailwindcss": "^4.2.1"
       },
       "build": {
+        "@babel/core": "^7.29.0",
+        "@rolldown/plugin-babel": "^0.2.1",
         "@tailwindcss/vite": "^4.2.1",
         "@vitejs/plugin-react": "^6.0.1",
         "babel-plugin-react-compiler": "^1.0.0",

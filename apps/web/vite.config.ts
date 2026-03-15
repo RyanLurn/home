@@ -1,7 +1,8 @@
 import { tanstackStart } from "@tanstack/react-start/plugin/vite";
+import react, { reactCompilerPreset } from "@vitejs/plugin-react";
 import { WEB_CLIENT_PORT } from "@home/core/constants/ports";
 import tailwindcss from "@tailwindcss/vite";
-import react from "@vitejs/plugin-react";
+import babel from "@rolldown/plugin-babel";
 import { defineConfig } from "vite";
 import { resolve } from "node:path";
 
@@ -14,6 +15,7 @@ export default defineConfig({
         semicolons: true,
       },
     }),
+    babel({ presets: [reactCompilerPreset()] }),
     react(),
     tailwindcss(),
   ],
