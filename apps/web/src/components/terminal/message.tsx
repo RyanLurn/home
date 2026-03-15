@@ -14,7 +14,7 @@ export function TerminalMessage({
 }: TerminalMessageProps) {
   return (
     <div {...props}>
-      [{timestamp.toLocaleString()}] [{tag}] {content}
+      [{timestamp.toLocaleTimeString()}] [{tag}] {content}
     </div>
   );
 }
