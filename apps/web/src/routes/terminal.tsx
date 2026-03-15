@@ -35,7 +35,7 @@ function TerminalPage() {
   }
 
   return (
-    <div className="flex h-dvh w-dvw flex-col gap-y-8 overflow-x-hidden p-6 text-4xl">
+    <div className="flex h-dvh w-dvw flex-col gap-y-8 overflow-x-hidden p-6 font-terminal text-4xl">
       {messages.map((message, index) => (
         <TerminalMessage
           timestamp={message.timestamp}
@@ -52,7 +52,7 @@ function TerminalPage() {
           }
         }}
         onChange={(e) => setUserInput(e.target.value)}
-        className="text-4xl md:text-4xl"
+        className="font-terminal text-4xl md:text-4xl"
         value={userInput}
       />
     </div>
