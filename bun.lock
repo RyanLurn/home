@@ -120,6 +120,19 @@
         "zod": "catalog:",
       },
     },
+    "scripts/grab": {
+      "name": "@home/grab",
+      "dependencies": {
+        "@home/core": "workspace:*",
+      },
+      "devDependencies": {
+        "@home/eslint": "workspace:*",
+        "@home/typescript": "workspace:*",
+        "@types/bun": "catalog:types",
+        "eslint": "catalog:",
+        "typescript": "catalog:",
+      },
+    },
   },
   "catalog": {
     "@t3-oss/env-core": "^0.13.10",
@@ -317,6 +330,8 @@
     "@home/core": ["@home/core@workspace:packages/core"],
 
     "@home/eslint": ["@home/eslint@workspace:configs/eslint"],
+
+    "@home/grab": ["@home/grab@workspace:scripts/grab"],
 
     "@home/server": ["@home/server@workspace:apps/server"],
 
