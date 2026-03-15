@@ -3,7 +3,7 @@
   "type": "module",
   "private": true,
   "scripts": {
-    "dev": "bunx --bun vite dev",
+    "dev": "bunx vite dev",
     "check-types": "bunx tsc --noEmit",
     "lint": "bunx eslint --cache",
     "lint:fix": "bunx eslint --cache --fix",
@@ -14,6 +14,7 @@
     "@home/core": "workspace:*",
     "@home/ui": "workspace:*",
     "@tanstack/react-router": "^1.166.7",
+    "@tanstack/react-start": "^1.166.7",
     "ai": "catalog:ai",
     "lucide-react": "catalog:ui",
     "react": "catalog:ui",
