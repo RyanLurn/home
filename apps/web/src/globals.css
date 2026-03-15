@@ -1,0 +1,4 @@
+@import "tailwindcss";
+@import "@home/ui/style.css";
+
+@source "../node_modules/@home/ui/dist";
